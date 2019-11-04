@@ -40,7 +40,12 @@ var app2=new Vue({
         }
         }
     }
-})
+});
 
 setTimeout(()=>(app1.nofo=false),4404);
 setTimeout(()=>(app2.top_show=true),4404);
+$(function(){
+  setTimeout(function(){
+      $("html,body").animate({scrollTop:$('#contents_1').offset().top},{duration: 1000, easing: "swing"})
+  },7000);
+});
